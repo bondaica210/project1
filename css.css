@@ -1,0 +1,170 @@
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+h1,h2,h3,h4,h5,p,a {
+	padding: 0;
+	margin: 0;
+	color : #222223;
+}
+
+a {
+	text-decoration: none;
+}
+
+.cbp-af-header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 230px;
+	background-color: #f6f6f6;
+	display: flex;
+	transition: height 0.3s;
+}
+
+.cbp-af-header.cbp-af-header-shirk {
+	height: 90px;
+}
+
+.container {
+	position: relative;
+	margin-top: 17rem;
+}
+
+.cbp-af-inner {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.cbp-af-inner h1 {
+	font-size: 11em;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 300;
+	transition: all 0.3s;
+}
+
+.cbp-af-header-shirk .cbp-af-inner h1 {
+	font-size: 6em;
+	transition: all 0.3s;
+}
+
+.cbp-af-inner nav {
+	display: flex;
+	align-items: center;
+}
+
+.cbp-af-inner nav a {
+	font-size: 2.8em;
+	padding: 10px;
+	color : #a09f9f;
+	font-weight: 700;
+	transition: all .3s;
+}
+
+.cbp-af-inner nav a:hover {
+	color : #222223;
+	transition: all .3s;
+}
+
+.reading article:nth-child(even) {
+	background-color: #47a3da;
+}
+
+.reading article:nth-child(even) p {
+	color: #f9f9f9;
+}
+
+.reading article div{
+	padding: 3em;
+	width: 65%;
+	margin: 0 auto;
+}
+
+.reading article p {
+	font-size: 2.5em;
+	line-height: 1.5em;
+	font-family: 'Lato';
+	color : #47a3da;
+}
+
+@media screen and (max-width: 768px) /* ipad */
+{
+	.cbp-af-inner {
+		flex-direction: column;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	.cbp-af-inner h1 {
+		font-size: 8em;
+		font-weight: 700;
+	}
+
+	.cbp-af-inner nav {
+		display: block; /* text-align works with block element */
+		text-align: center;
+	}
+
+	.cbp-af-header-shirk .cbp-af-inner h1 {
+		font-size: 3em;
+	}
+
+	.cbp-af-header-shirk .cbp-af-inner nav a {
+		font-size: 2em;
+	}
+	
+	.cbp-af-header {
+		height: 200px;
+	}
+
+	.reading article p {
+		font-size: 2em;
+		line-height: 1.5em;
+	}
+
+	.container {
+		margin-top: 15rem;
+	}
+
+}
+
+@media screen and (max-width: 425px) 
+{
+	.cbp-af-inner h1 {
+		font-size: 6em;
+		font-weight: 400;
+	}
+
+	.cbp-af-header-shirk .cbp-af-inner h1 {
+		font-size: 2em;
+	}
+
+	.cbp-af-inner nav a {
+		font-size: 2em;
+		font-weight: 400;
+		padding: 4px;
+	}
+
+	.cbp-af-header-shirk .cbp-af-inner nav a {
+		font-size: 1.6em;
+	}
+
+	.cbp-af-header {
+		height: 170px;
+	}
+
+	.container {
+		margin-top: 13rem;
+	}
+
+
+}
